@@ -6,7 +6,7 @@
 
 
 body{
-    background-color: rgb(130, 130, 250);
+    background-color: rgb(194, 210, 167);
     margin: 0;
     padding: 0;
 }
@@ -42,6 +42,7 @@ nav ul li a:hover {
 }
 
 .sign{
+    background-color: #c2c4ac;
     padding-left: 0;
 }
 
@@ -69,3 +70,51 @@ nav ul li a:hover {
     color: blue;
 }
 
+.list{
+    display: flex;
+}
+
+.item{
+    
+        width: 57%;
+        height: auto;
+      
+}
+
+button{
+    margin: auto;
+}
+
+header {
+    background-color: rgb(137, 157, 96); /* Change this to the color you want for the part above the navigation bar */
+    padding: 10px;
+}
+
+
+.sell{
+    display: flex;
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.button-list li {
+    margin-right: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #888d75;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #bacd40;
+}

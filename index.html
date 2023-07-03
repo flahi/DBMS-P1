@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmashop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1 class="head">Stationary.com</h1>
+    <header>
+        <h1 class="head">Stationary.com</h1>
+    </header>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -24,13 +28,23 @@
         </ul>
     </nav>
     <h2 class="head2">🔥Hot Deals!</h2>
-    <ul>
-        <li><div>
-            <h3>Trimax</h3>
-            <p>300Rs</p>
-        </div></li>
+    <ul class="list">
+        <li>
+            <div class="test">
+                <h3>Trimax</h3>
+                <img class="item" src="MakeFixedSizeThumbnail.jpeg" alt="">
+                <p><b>300Rs</b></p>
+                <div class="sell">
+                    <ul class="button-list">
+                        <li><a href="#" class="button">Buy Now</a></li>
+                        <li><a href="#" class="button">Add to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
     </ul>
 </body>
+
 </html>
 <script type="module">
     // Import the functions you need from the SDKs you need
@@ -38,20 +52,20 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyDAsvmJ4I9ZIm6Qi8iiG8Q2bT-r8uBkhiQ",
-      authDomain: "stationary-405b2.firebaseapp.com",
-      projectId: "stationary-405b2",
-      storageBucket: "stationary-405b2.appspot.com",
-      messagingSenderId: "108311604833",
-      appId: "1:108311604833:web:a8225b1c6e1363b91ec420",
-      measurementId: "G-60MJDJ4YKJ"
+        apiKey: "AIzaSyDAsvmJ4I9ZIm6Qi8iiG8Q2bT-r8uBkhiQ",
+        authDomain: "stationary-405b2.firebaseapp.com",
+        projectId: "stationary-405b2",
+        storageBucket: "stationary-405b2.appspot.com",
+        messagingSenderId: "108311604833",
+        appId: "1:108311604833:web:a8225b1c6e1363b91ec420",
+        measurementId: "G-60MJDJ4YKJ"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-  </script> 
+</script>
