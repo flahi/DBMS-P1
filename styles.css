@@ -126,6 +126,7 @@ button{
 
 .cart h2 {
     color: var(--c3);
+    display: inline-block;
 }
 
 .items {
@@ -144,8 +145,30 @@ button{
 .cart .item button {
     float: right;
     margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid var(--c3);
+    background-color: #393E46;
+    color: #EEEEEE;
 }
 
 .cart p {
     text-align: right;
+    float: right;
+}
+
+.products .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    height: 80%;
+}
+
+.products .item {
+    height: 70%;
+    width: 23%;
+    padding: 12px;
+    background-color: var(--c1);
+    border-radius: 10px;
 }
