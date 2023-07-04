@@ -1,30 +1,13 @@
-// JavaScript code for dynamically loading content based on navigation links
-const contentSection = document.getElementById('content');
-const navLinks = document.querySelectorAll('nav a');
 
-function loadContent(event) {
-  event.preventDefault();
-  const link = this.getAttribute('href');
-  fetchContent(link);
-}
+// Get all the navigation buttons
+const navButtons = document.querySelectorAll('.nav-button');
 
-function fetchContent(link) {
-  // Make AJAX request or fetch API call to get content based on the link
-  // Example:
-  fetch(link + '.html')
-    .then(response => response.text())
-    .then(data => {
-      contentSection.innerHTML = data;
-    })
-    .catch(error => {
-      contentSection.innerHTML = 'Error loading content.';
-    });
-}
-
-// Attach event listeners to navigation links
-navLinks.forEach(link => {
-  link.addEventListener('click', loadContent);
+// Add a click event listener to each button
+navButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove 'active' class from all buttons
+    navButtons.forEach(btn => btn.classList.remove('active'));
+    // Add 'active' class to the clicked button
+    button.classList.add('active');
+  });
 });
-
-// Load default content on page load
-fetchContent(navLinks[0].getAttribute('href'));
