@@ -14,7 +14,7 @@
     grid-column: 1/ span 2;
     font-size: 3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
+    text-align: center;
     color: var(--c1);
     padding: 1rem 0px;
     margin-bottom: 0;
@@ -53,22 +53,22 @@ body{
   }
   
   .navigation a:hover {
-    background-color: var(--c2);
+    background-color: var(--c3);
   }
 
   .navigation .nav-sign {
     float: right;
-  }
+  } 
 
   .nav-button.active {
-    background-color: var(--c2);
+    background-color: var(--c3);
   }
 
   .flex-container {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   
 
 .search-bar{
@@ -114,9 +114,7 @@ body{
     border-radius: 7px;
 }
 
-/* button{
-    margin: auto;
-} */
+
 
 .main {
     margin: 0;
@@ -173,7 +171,7 @@ body{
 
 .items {
     overflow-y: scroll;
-    height: 250px;
+    height: 175px;
 }
 
 .cart .item {
@@ -214,14 +212,7 @@ body{
     background-color: var(--c2);
     border-radius: 10px;
 }
-/*.search-button {
-    background-color: white;
-  }
-  
-  .search-button:hover {
-    background-color: var(--c1);
-  }
-  */
+
 
   
   
