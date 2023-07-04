@@ -6,43 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmashop</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <div class="main">
         <h1 class="head">Stationary.com</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li>
-                <div class="search-bar">
-                    <input type="text" placeholder="What do you want?">
-                    <button type="submit">Search</button>
-                </div>
-            </li>
-            <li class="sign"><a href="#">Sign in</a></li>
-        </ul>
-    </nav>
-    <h2 class="head2">🔥Hot Deals!</h2>
-    <ul class="list">
-        <li>
-            <div class="test">
-                <h3>Trimax</h3>
-                <img class="item" src="MakeFixedSizeThumbnail.jpeg" alt="">
-                <p><b>300Rs</b></p>
-                <div class="sell">
-                    <ul class="button-list">
-                        <li><a href="#" class="button">Buy Now</a></li>
-                        <li><a href="#" class="button">Add to Cart</a></li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="What do you want?">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="offers cont">
+            <h2>Offers</h2>
+        </div>
+        <div class="products cont">
+            <h2>Products</h2>
+        </div>
+        <div class="cart cont">
+            <h2>Cart</h2>
+            <div class="item">Sample: 2.99$<button type="submit">+</button><button type="submit">-</button></div>
+            <div class="item">Sample: 2.99$<button type="submit">+</button><button type="submit">-</button></div>
+        </div>
+    </div>
 </body>
 
 </html>
