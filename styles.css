@@ -208,7 +208,7 @@ body{
 }
 
 .products .item {
-    height: 70%;
+    height: 275px;
     width: 23%;
     padding: 12px;
     background-color: var(--c2);
