@@ -17,6 +17,7 @@
     text-align: left;
     color: var(--c1);
     padding: 1rem 0px;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -52,9 +53,19 @@ body{
     background-color: var(--c2);
   }
 
+  .navigation .nav-sign {
+    float: right;
+  }
+
   .nav-button.active {
     background-color: var(--c2);
   }
+
+  .flex-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
   
 
 .search-bar{
